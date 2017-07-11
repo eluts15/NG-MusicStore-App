@@ -50,3 +50,6 @@ Thumbs.db
 Session.vim
 .netrwhist
 *~
+
+#Firebase credentials
+/src/app/api-keys.ts

@@ -25,3 +25,5 @@ export class MarketplaceComponent implements OnInit {
     this.router.navigate(['albums', clickedAlbum.id]);
   };
 }
+
+
