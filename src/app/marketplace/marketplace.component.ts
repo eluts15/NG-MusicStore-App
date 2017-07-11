@@ -2,7 +2,7 @@ import { Component , OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Album } from '../album.model';
 import { AlbumService } from '../album.service';
-import { FirebaseListOvservable } from  'angularfire2/database';
+import { FirebaseListObservable } from  'angularfire2/database';
 
 @Component({
   selector: 'app-marketplace',
