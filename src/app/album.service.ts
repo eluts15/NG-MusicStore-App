@@ -7,7 +7,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class AlbumService {
   albums: FirebaseListObservable<any[]>;
 
-  constructor(private database: AngularFireDatabase) { 
+  constructor(private database: AngularFireDatabase) {
     this.albums = database.list('albums');
   }
 
@@ -15,12 +15,12 @@ export class AlbumService {
     return this.albums;
   }
 
-  getAlbumById(albumId: number) {
-    for (var i = 0; i <= ALBUMS.length - 1; i++) {
-      if (ALBUMS[i].id === albumId) {
-        return ALBUMS[i];
-      }
-    }
+  addAlbum(newAlbum: Album) {
+    this.albums.push(newAlbum);
+  }
+
+  getAlbumById(albumId: string) {
+    return this.database.object('albums/' + albumId);
   }
 
 }

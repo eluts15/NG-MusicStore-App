@@ -7,5 +7,5 @@ import { Album } from './album.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My Music Store';
+  title = '楽カキフサ豊並せぱゅろ刊不もラ抗試メネ禁週ゆうス悪政ぐえリわ事著タ針戸リオ地准おぎ攻者ナアシ新青チケ禁学もんこつ明里チ観土イラ客聴散るれだげ応語み可噴塗冷勧トとふ。超をイ生魅';
 }
